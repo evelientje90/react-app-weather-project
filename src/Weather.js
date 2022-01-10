@@ -6,28 +6,25 @@ export default function Weather() {
             <h1>Amsterdam</h1>
             <ul>
                 <li>Sunday 21:00</li>
-                <li>Sunny</li>
+                <li>Cloudy</li>
             </ul>
             <div className="row mt-3">
-                <div className="col-6">
-									<div className="float-left">
-                    <img 
-										src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-                    alt="Sunny"
-										/>
-									<div className="float-left">
+              <div className="col-6">
                     <span className="temperature">6</span>
                     <span className="unit">°C</span>
-                	</div>
+										<img 
+										src=""
+                    alt=""
+										className="float-left"
+										/>
 								</div>
-								</div>
-                <div className="col-6">
+            	<div className="col-6">
                     <ul>
                         <li>Wind: 13km/h</li>
                         <li>Humidity: 35%</li>
                     </ul>
-                </div>
-            </div>
+							</div>
+							</div>
             <form>
                 <div className="row">
                 <div className="col-9">
