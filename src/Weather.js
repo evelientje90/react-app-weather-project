@@ -37,7 +37,7 @@ export default function Weather(props) {
 	if (weatherData.ready) {
 	return (
         <div className="Weather">
-					<WeatherInfo data={weatherData} />
+				<WeatherInfo data={weatherData} />
             <form onSubmit={handleSubmit}>
                 <div className="row">
                 <div className="col-9">
@@ -46,7 +46,7 @@ export default function Weather(props) {
                     placeholder="Type a city..."
                     className="form-control"
                     autoFocus="on"
-										onChange={handleCityChange}
+					onChange={handleCityChange}
                     />
                 </div>
                 <div className="col-3">
