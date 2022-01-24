@@ -1,6 +1,7 @@
 import React, {useState} from  "react";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -22,7 +23,7 @@ export default function Weather(props) {
 	function search(){
 		const apiKey = "2ef9e61eec221d1bd1943b5909229927";
 		let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-  	axios.get(apiUrl).then(handleResponse);
+  		axios.get(apiUrl).then(handleResponse);
 	}
 	
 	function handleSubmit(event){
@@ -38,6 +39,7 @@ export default function Weather(props) {
 	return (
         <div className="Weather">
 				<WeatherInfo data={weatherData} />
+				<WeatherForecast coordinates={weatherData.coordinates}/>
             <form onSubmit={handleSubmit}>
                 <div className="row">
                 <div className="col-9">
