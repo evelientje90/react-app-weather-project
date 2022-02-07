@@ -1,0 +1,18 @@
+.WeatherForecast   button {
+    font-family: "PT Sans", sans-serif;
+    color: black;
+    font-size: 22px;
+    display: inline-block;
+    margin: 0px auto;
+    padding: 12px 20px;
+    background-color: transparent;
+    border: 0px solid #25161b;
+    box-shadow: 5px 5px 10px rgba(100, 36, 36, 0.3);
+    transition: all 200ms ease-in-out;
+  }
+  
+  .WeatherForecast button:hover {
+    background: #6d597a;
+    color: white;
+    cursor: pointer;
+  }

@@ -5,7 +5,7 @@
         rgb(254, 255, 165) 0%,
         rgb(255, 232, 182) 90%);
     font-family: "PT Sans", sans-serif;
-    margin: 60px 300px 600px 30px;
+    margin: 50px 300px 10px 5px;
     text-align: left;
     border: 1px solid #dadde1;
     padding: 20px;
@@ -16,13 +16,13 @@
   .Weather h1 {
     font-size: 38px;
     text-align: initial;
-    color:grey;
+    color:#6d597a
   }  
 
   .Weather h2 {
     font-size: 38px;
-    text-align: center;
-    color: grey;
+    text-align: end;
+    color: #6d597a
 
   }
   
@@ -38,7 +38,6 @@
       padding-left: 0;
   }
   .Weather .WeatherTemperature {
-    text-align: center;
     font-weight: bold;
     color: rgb(33, 33, 33);
     font-size: 54px;
