@@ -16,7 +16,8 @@ export default function Weather(props) {
 			description: response.data.weather[0].description,
 			icon: response.data.weather[0].icon,
 			wind: response.data.wind.speed,
-			city: response.data.name
+			city: response.data.name,
+			coordinates: response.data.coord,
 		});
 	}
 
@@ -40,7 +41,7 @@ export default function Weather(props) {
         <div className="Weather">
 				<WeatherInfo data={weatherData} />
 				<WeatherForecast coordinates={weatherData.coordinates}/>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} mt-5>
                 <div className="row">
                 <div className="col-9">
                     <input 
