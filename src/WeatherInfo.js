@@ -7,7 +7,7 @@ export default function WeatherInfo(props) {
   return (
     <div className="container">
         <div className="WeatherInfo">
-            <div className="row">
+            <div className="row d-flex justify-content-between">
                 <div className="col-sm-4 mb-5">
                     <h1>{props.data.city}</h1>
                 </div>

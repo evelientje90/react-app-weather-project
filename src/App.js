@@ -6,9 +6,9 @@ import "./App.css";
 export default function App() {
   return (
     <div className="App">
-      <div className="container">
+      <div className="container d-flex">
         <Weather defaultCity="Amsterdam" />
-        <footer>
+        <footer className="	d-flex justify-content-between mb-5 d-none d-lg-flex">
           This project was coded by Evelina Kupryte and is open-sourced on {" "}
         <a
         href="https://github.com/evelientje90/react-app-weather-project"
